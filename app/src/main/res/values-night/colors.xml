@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="toolbar">#000000</color>
+    <color name="nav_bg">#000000</color>
+    <color name="drawer_item">#FFFFFF</color>
+    <color name="drawer_item_selected">#29bb66</color>
+    <color name="app_background">#000000</color>
+
+    <color name="textView_login">#FFFFFF</color>
+    <color name="textView_sub_login">#CCFFFFFF</color>
+    <color name="image_login">#FFFFFF</color>
+    <color name="view_login">#FFFFFF</color>
+    <color name="skip_button_login">#FFFFFF</color>
+    <color name="check_box_bg_login">#FFFFFF</color>
+    <color name="check_box_check_bg_login">#FFFFFF</color>
+    <color name="check_box_tick_login">#29bb66</color>
+    <color name="check_box_circle_login">#29bb66</color>
+    <color name="button_google_line">#EA4235</color>
+    <color name="button_facebook_line">#3B5999</color>
+    <color name="textView_fp">#FFFFFF</color>
+    <color name="imageView_fp">#FFFFFF</color>
+
+    <color name="textView_home">#FFFFFFFF</color>
+    <color name="textView_sub_home">#BFFFFFFF</color>
+    <color name="slider_bg_home">#B3C6C6C6</color>
+    <color name="page_indicator_active_home">#FFFFFF</color>
+    <color name="page_indicator_inactive_home">#29bb66</color>
+    <color name="room_start_home">#f75797</color>
+    <color name="room_end_home">#fd6b82</color>
+    <color name="location_start_home">#528ae7</color>
+    <color name="location_end_home">#1ddedb</color>
+    <color name="facilities_start_home">#f38b82</color>
+    <color name="facilities_end_home">#fac383</color>
+    <color name="gallery_start_home">#13a443</color>
+    <color name="gallery_end_home">#43c6ac</color>
+    <color name="contactUs_start_home">#c02425</color>
+    <color name="contactUs_end_home">#f08c6d</color>
+    <color name="aboutUs_start_home">#48325f</color>
+    <color name="aboutUs_end_home">#a770ef</color>
+
+    <color name="textView_room">#FFFFFF</color>
+    <color name="textView_title_rd">#FFFFFF</color>
+    <color name="textView_sub_rd">#FFFFFF</color>
+    <color name="page_indicator_active_rd">#FFFFFF</color>
+    <color name="page_indicator_inactive_rd">#29bb66</color>
+    <color name="textView_book_room">#CCFFFFFF</color>
+
+    <color name="recyclerView_gallery">#222222</color>
+    <color name="textView_gallery">#FFFFFFFF</color>
+
+    <color name="textView_title_facilities">#FFFFFF</color>
+    <color name="textView_facilities">#BFFFFFFF</color>
+    <color name="textView_facilities_adapter">#FFFFFFFF</color>
+
+    <color name="title_bg_dialog_review">#222222</color>
+    <color name="bg_dialog_review">#000000</color>
+    <color name="textView_title_dialog_review">#FFFFFF</color>
+    <color name="title_bg_dialog_review_list">#222222</color>
+    <color name="textView_title_dialog_review_list">#FFFFFF</color>
+    <color name="textView_sub_dialog_review_list">#797979</color>
+    <color name="imageView_border_review_adapter">#EAEAEA</color>
+    <color name="textView_title_review_adapter">#FFFFFF</color>
+    <color name="textView_subTitle_review_adapter">#BFFFFFFF</color>
+    <color name="background_item_one_review_adapter">#424242</color>
+    <color name="background_item_two_review_adapter">#343434</color>
+
+    <color name="textView_userName_pro">#FFFFFF</color>
+    <color name="textView_pro">#FFFFFF</color>
+    <color name="textView_sub_pro">#FFFFFF</color>
+    <color name="view_pro">#222222</color>
+    <color name="view_line_pro">#BFFFFFFF</color>
+    <color name="textView_pro_image">#FFFFFF</color>
+    <color name="bg_image_pro">#222222</color>
+    <color name="imageView_border_profile">#BFFFFFFF</color>
+    <color name="bg_profile">#222222</color>
+    <color name="textView_editPro">#FFFFFF</color>
+    <color name="textView_hint_editPro">#FFFFFF</color>
+    <color name="textView_hint_layout_editPro">#29bb66</color>
+    <color name="textView_box_color">#99FFFFFF</color>
+    <color name="textView_box_select_color">#29bb66</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">
+        @color/textView_box_color
+    </color>
+
+    <color name="textView_setting">#FFFFFF</color>
+    <color name="view_setting">#BFFFFFFF</color>
+    <color name="switch_thumb_unSelect">#ADADAD</color>
+    <color name="textView_them">#FFFFFF</color>
+    <color name="card_bg_them">#424040</color>
+    <color name="textView_contactUs">#FFFFFF</color>
+    <color name="about_us_Text">#FFFFFF</color>
+    <color name="about_us_SubText">#BFFFFFFF</color>
+
+    <color name="textView_dialog_update">#FFFFFF</color>
+    <color name="textView_dialog_booking">#FFFFFF</color>
+    <color name="textView_dialog_contactUS">#FFFFFF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="check_box">#FFFFFF</color>
+    <color name="check_box_select">#29bb66</color>
+    <color name="header_bg_cal">#222222</color>
+    <color name="bg_cal">#000000</color>
+    <color name="select_day_cal">#29bb66</color>
+    <color name="primary_text_cal">#FFFFFF</color>
+    <color name="primary_text_second_cal">#FFFFFF</color>
+    <color name="button_text_cal">#FFFFFF</color>
+    <color name="line_all_spinner">#99FFFFFF</color>
+    <color name="textView_noData">#FFFFFF</color>
+    <color name="textView_app_color">#29bb66</color>
+    <color name="button_bg">#29bb66</color>
+    <color name="image_color">#FFFFFF</color>
+    <color name="progressbar_style">#FFFFFF</color>
+    <color name="dialog_text">#FFFFFF</color>
+    <color name="dialog_text_button">#FFFFFF</color>
+    <color name="cursor_editText">#FFFFFF</color>
+    <color name="textView_select_text">#4A6865</color>
+
+</resources>

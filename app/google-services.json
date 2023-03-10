@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "870132211605",
+    "firebase_url": "https://video-status-1563772295696.firebaseio.com",
+    "project_id": "video-status-1563772295696",
+    "storage_bucket": "video-status-1563772295696.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870132211605:android:579fa60159e0fbee6a209c",
+        "android_client_info": {
+          "package_name": "com.example.singlehotel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870132211605-4142cr15b61lcq6f3733912go1gug1e3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.singlehotel",
+            "certificate_hash": "38fcdaf92163692214c7493d5f31646d3ac745f5"
+          }
+        },
+        {
+          "client_id": "870132211605-bhln9r1ssv53nvgmqakoo466fi7f1tok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.singlehotel",
+            "certificate_hash": "94ae9787670c424b3c72afea0e41579362abe88a"
+          }
+        },
+        {
+          "client_id": "870132211605-92i5cgt2rsr4fsv4puv2dqpuianf1l9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-pSafAVNwSiGaxlPfvhH6QTAHzoViDFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870132211605-92i5cgt2rsr4fsv4puv2dqpuianf1l9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

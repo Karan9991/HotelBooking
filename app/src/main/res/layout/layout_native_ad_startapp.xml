@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_native_startapp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ad_attribution"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="start"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:text="Ad"
+        android:background="#FFCC66"
+        android:width="15dp"
+        android:height="15dp"
+        android:gravity="center"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="13sp"
+        android:text="asdas"
+        android:textColor="@color/about_us_Text"
+        android:layout_toEndOf="@+id/icon" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:maxLines="5"
+        android:textSize="10sp"
+        android:text="asdsa"
+        android:textColor="@color/about_us_SubText"
+        android:lineSpacingMultiplier="0.9"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_below="@+id/title" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

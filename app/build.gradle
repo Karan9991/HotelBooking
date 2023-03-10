@@ -1,0 +1,84 @@
+plugins {
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+android {
+    compileSdkVersion 31
+
+    defaultConfig {
+        applicationId "com.example.singlehotel"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.shape_test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildTypes.each {
+        it.buildConfigField 'String', 'My_api', app_url
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.google.android.gms:play-services-ads:21.4.0'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.1'
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    implementation 'com.onesignal:OneSignal:4.8.3@aar'
+    implementation "androidx.concurrent:concurrent-futures:1.1.0"
+    implementation 'com.github.ornolfr:rating-view:0.1.2@aar'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3'
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+    implementation 'com.facebook.android:facebook-login:15.0.1'
+    implementation 'com.google.ads.mediation:facebook:6.12.0.0'
+    implementation 'com.startapp:inapp-sdk:4.10.6'
+    implementation 'com.applovin:applovin-sdk:11.6.1'
+    implementation project(path: ':SmoothCheckBox-master')
+    implementation 'com.wortise:android-sdk:1.4.1'
+    implementation 'com.razorpay:checkout:1.5.13'
+    implementation 'com.stripe:stripe-android:17.1.1'
+    implementation 'com.braintreepayments.api:drop-in:4.6.0'
+}
+

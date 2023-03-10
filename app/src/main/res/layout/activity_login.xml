@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/con_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_up_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@string/welcome_back"
+            android:textColor="@color/textView_login"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_into_continue"
+            android:textColor="@color/textView_sub_login"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_up_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_up_title" />
+
+        <ImageView
+            android:id="@+id/imageView_user_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/user"
+            app:layout_constraintEnd_toStartOf="@+id/editText_email_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView3"
+            app:tint="@color/image_login" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_email_login"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/transparent"
+            android:focusable="true"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/textView_login"
+            android:textColorHint="@color/textView_login"
+            android:textSize="16sp"
+            android:theme="@style/editText_style"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_user_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_user_login"
+            app:layout_constraintTop_toTopOf="@+id/imageView_user_login"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <include
+            android:id="@+id/include_email_login"
+            layout="@layout/login_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/editText_email_login"
+            app:layout_constraintStart_toStartOf="@+id/imageView_user_login"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_user_login" />
+
+        <ImageView
+            android:id="@+id/imageView_pass_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="8dp"
+            android:paddingBottom="12dp"
+            android:src="@drawable/password"
+            app:layout_constraintEnd_toStartOf="@+id/editText_password_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include_email_login"
+            app:tint="@color/image_login" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_password_login"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/transparent"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/textView_login"
+            android:textColorHint="@color/textView_login"
+            android:textSize="16sp"
+            android:theme="@style/editText_style"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_pass_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_pass_login"
+            app:layout_constraintTop_toTopOf="@+id/imageView_pass_login" />
+
+        <include
+            android:id="@+id/include_pass_login"
+            layout="@layout/login_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/editText_password_login"
+            app:layout_constraintStart_toStartOf="@+id/imageView_pass_login"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_pass_login" />
+
+        <cn.refactor.library.SmoothCheckBox
+            android:id="@+id/checkbox_login"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            app:color_checked="@color/check_box_check_bg_login"
+            app:color_tick="@color/check_box_tick_login"
+            app:color_unchecked="@color/check_box_bg_login"
+            app:color_unchecked_stroke="@color/check_box_circle_login"
+            app:layout_constraintEnd_toStartOf="@+id/textView_remember_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include_pass_login" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_remember_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_me"
+            android:textColor="@color/textView_login"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/checkbox_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/checkbox_login"
+            app:layout_constraintTop_toTopOf="@+id/checkbox_login" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_login"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/button_text_login"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/button_bg"
+            app:cornerRadius="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/button_skip_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_login" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_skip_login"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/skip"
+            android:textColor="@color/textView_app_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/skip_button_login"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/button_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_login"
+            app:layout_constraintTop_toTopOf="@+id/button_login" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_fp_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="end"
+            android:text="@string/forget_password"
+            android:textColor="@color/textView_login"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/button_login"
+            app:layout_constraintTop_toBottomOf="@+id/button_skip_login" />
+
+        <LinearLayout
+            android:id="@+id/ll_google_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_google_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/frameLayout_login"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_fp_login">
+
+            <ImageView
+                android:id="@+id/imageView_google_login"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/google_ic" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView_google_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/google_login"
+                android:textColor="@color/textView_login"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/button_facebook_bg"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ll_google_login"
+            app:layout_constraintTop_toTopOf="@+id/ll_google_login">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView_facebook_login"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/facebook_ic" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textView_facebook_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/facebook_login"
+                    android:textColor="@color/textView_login"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_terms_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:theme="@style/checkBoxStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout_login" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/flexbox_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexWrap="wrap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/checkbox_terms_login"
+            app:layout_constraintTop_toTopOf="@+id/checkbox_terms_login">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView_titleTerms_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/terms_title"
+                android:textColor="@color/textView_login"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView_terms_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/terms_of_use"
+                android:textColor="@color/textView_app_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_donot_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/dont_have_an_account_yet"
+            android:textColor="@color/textView_sub_login"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/view_login"
+            app:layout_constraintEnd_toStartOf="@+id/textView_register_login"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_terms_login"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_register_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/register"
+            android:textColor="@color/textView_app_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_donot_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView_donot_login"
+            app:layout_constraintTop_toTopOf="@+id/textView_donot_login" />
+
+        <View
+            android:id="@+id/view_login"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/textView_app_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView_register_login"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="@+id/textView_donot_login" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

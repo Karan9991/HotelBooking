@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/room"
+            android:icon="@drawable/ic_room"
+            android:title="@string/room" />
+        <item
+            android:id="@+id/location"
+            android:icon="@drawable/ic_location"
+            android:title="@string/location" />
+        <item
+            android:id="@+id/gallery"
+            android:icon="@drawable/ic_gallery"
+            android:title="@string/gallery" />
+        <item
+            android:id="@+id/facilities"
+            android:icon="@drawable/ic_facilities"
+            android:title="@string/facilities" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="@string/profile" />
+
+        <item
+            android:id="@+id/booking_history"
+            android:icon="@drawable/ic_booking_history"
+            android:title="@string/my_booking" />
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/setting"
+            android:title="@string/setting" />
+    </group>
+
+</menu>

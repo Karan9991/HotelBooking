@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_sign_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@string/register"
+            android:textColor="@color/textView_login"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView_user_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/user"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_sign_title"
+            app:tint="@color/image_login" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_name_register"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:background="@color/transparent"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/textView_login"
+            android:textColorHint="@color/textView_login"
+            android:textSize="16sp"
+            android:theme="@style/editText_style"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_user_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_user_register"
+            app:layout_constraintTop_toTopOf="@+id/imageView_user_register" />
+
+        <include
+            android:id="@+id/include_name_register"
+            layout="@layout/login_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/editText_name_register"
+            app:layout_constraintStart_toStartOf="@+id/imageView_user_register"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_user_register" />
+
+        <ImageView
+            android:id="@+id/imageView_email_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include_name_register"
+            app:tint="@color/image_login" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_email_register"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:background="@color/transparent"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/textView_login"
+            android:textColorHint="@color/textView_login"
+            android:textSize="16sp"
+            android:theme="@style/editText_style"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_email_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_email_register"
+            app:layout_constraintTop_toTopOf="@+id/imageView_email_register" />
+
+        <include
+            android:id="@+id/include_email_register"
+            layout="@layout/login_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/editText_email_register"
+            app:layout_constraintStart_toStartOf="@+id/imageView_email_register"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_email_register" />
+
+        <ImageView
+            android:id="@+id/imageView_pass_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include_email_register"
+            app:tint="@color/image_login" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_password_register"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:background="@color/transparent"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/textView_login"
+            android:textColorHint="@color/textView_login"
+            android:textSize="16sp"
+            android:theme="@style/editText_style"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_pass_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_pass_register"
+            app:layout_constraintTop_toTopOf="@+id/imageView_pass_register" />
+
+        <include
+            android:id="@+id/include_password_register"
+            layout="@layout/login_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/editText_password_register"
+            app:layout_constraintStart_toStartOf="@+id/imageView_pass_register"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_pass_register" />
+
+        <ImageView
+            android:id="@+id/imageView_conform_pass_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include_password_register"
+            app:tint="@color/image_login" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_conform_password_register"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:background="@color/transparent"
+            android:hint="@string/conform_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/textView_login"
+            android:textColorHint="@color/textView_login"
+            android:textSize="16sp"
+            android:theme="@style/editText_style"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_conform_pass_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_conform_pass_register"
+            app:layout_constraintTop_toTopOf="@+id/imageView_conform_pass_register" />
+
+        <include
+            android:id="@+id/include_conform_password_register"
+            layout="@layout/login_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/editText_conform_password_register"
+            app:layout_constraintStart_toStartOf="@+id/imageView_conform_pass_register"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_conform_pass_register" />
+
+        <ImageView
+            android:id="@+id/imageView_phone_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include_conform_password_register"
+            app:tint="@color/image_login" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_phoneNo_register"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:background="@color/transparent"
+            android:hint="@string/phoneNo"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="@color/textView_login"
+            android:textColorHint="@color/textView_login"
+            android:textSize="16sp"
+            android:theme="@style/editText_style"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_phone_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView_phone_register"
+            app:layout_constraintTop_toTopOf="@+id/imageView_phone_register" />
+
+        <include
+            android:id="@+id/include_phone_register"
+            layout="@layout/login_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/editText_phoneNo_register"
+            app:layout_constraintStart_toStartOf="@+id/imageView_phone_register"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_phone_register" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/checkbox_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:theme="@style/checkBoxStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include_phone_register" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/flexbox_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexWrap="wrap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/checkbox_register"
+            app:layout_constraintTop_toTopOf="@+id/checkbox_register">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView_titleTerms_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1dp"
+                android:text="@string/terms_title"
+                android:textColor="@color/textView_sub_login"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView_terms_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/terms_of_use"
+                android:textColor="@color/textView_app_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_submit"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/button_bg"
+            app:cornerRadius="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flexbox_register" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_dont_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/already_have_an_account_yet"
+            android:textColor="@color/textView_sub_login"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/view_register"
+            app:layout_constraintEnd_toStartOf="@+id/textView_login_register"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_submit"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView_login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/login"
+            android:textColor="@color/textView_app_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_dont_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView_dont_register"
+            app:layout_constraintTop_toTopOf="@+id/textView_dont_register" />
+
+        <View
+            android:id="@+id/view_register"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/textView_app_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView_login_register"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="@+id/textView_dont_register" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
