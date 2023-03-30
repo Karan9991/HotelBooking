@@ -1,6 +1,6 @@
 # Hotel Booking App
 
-Single Hotel App is complete solution of any best hotel App. The Purpose of this application is that you will find all details of Hotel. With this application you will create your hotel application. It makes very easy to check all details of hotel based on your needs. The application is specially optimized to be extremely easy to configure and detailed documentation is provided.
+Single Hotel App is complete solution of any best hotel App. The Purpose of this application is that you will find all details of Hotel for reservation.
 
 **App Features:**
 
